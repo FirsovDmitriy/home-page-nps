@@ -1,0 +1,103 @@
+.work {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 240px;
+        @include screenS() {
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+    }
+}
+.work-col {
+    display: flex;
+    flex-direction: column;
+    @include screenS() {
+        align-items: flex-start;
+        margin-bottom: 60px;
+    }
+    &__title {
+        margin-bottom: 10px;
+        @include screenXXL() {
+            margin-bottom: 5px;
+        }
+        &-year {
+            font-size: 32px;
+            color: #a4afc1;
+            margin-left: 5px;
+        }
+    }
+    &__text {
+        font-size: $fs-primary-font-xl;
+        line-height: 40px;
+        &--second {
+            max-width: 800px;
+        }
+        @include screenXXL() {
+            font-size: $fs-primary-font-lg;
+            max-width: 540px;
+            &--second {
+                max-width: 540px;
+            }
+        }
+    }
+    &__img {
+        // max-width: 960px;
+        max-width: 100%;
+        margin: 40px 0 0 0;
+        &--top {
+            order: -1;
+            margin: 0 0 40px 0;
+        }
+        @include screenXXL() {
+            margin: 20px 0 0 0;
+            &--top {
+                margin: 0 0 20px 0;
+            }
+        }
+        @include screenS() {
+            &--top {
+                order: 0;
+            }
+        }
+    }
+}
+
+.circle-block {
+    display: flex;
+    margin-bottom: 120px;
+    @include screenXXL() {
+        margin-bottom: 44px;
+    }
+    @include screenL() {
+        margin-bottom: 40px;
+    }
+    @include screenS() {
+        display: none;
+    }
+    &__elem {
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        background: #F26539;
+        & + & {
+            margin-left: 80px;
+        }
+        @include screenXXL() {
+            width: 222px;
+            height: 222px;
+            & + & {
+                margin-left: 60px;
+            }
+        }
+        @include screenL() {
+            width: 153px;
+            height: 160px;
+            & + & {
+                margin-left: 40px;
+            }
+        }
+    }
+}

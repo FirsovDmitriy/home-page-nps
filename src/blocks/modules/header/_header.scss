@@ -1,0 +1,49 @@
+.header {
+    position: absolute;
+    width: 100%;
+    padding-top: 40px;
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        line-height: 0;
+        margin-right: 96px;
+    }
+    @include screenM() {
+        &__btn {
+            display: none;
+        }
+    }
+    @include screenS() {
+        padding-top: 10px;
+        &__row {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+.nav-header {
+    margin-right: auto;
+    &__list {
+        display: flex;
+    }
+    &__item {
+        & + & {
+            margin-left: 73px;
+            @include screenL() {
+                margin-left: 40px;
+            }
+            @include screenXS() {
+                margin-left: 20px;
+            }
+        }
+    }
+    &__link {
+        font-size: $fs-primary-font-md;
+        line-height: 130%;
+        @include screenXS() {
+            font-size: $fs-primary-font-xs;
+        }
+    }
+}

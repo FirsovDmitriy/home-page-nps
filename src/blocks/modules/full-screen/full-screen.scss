@@ -1,0 +1,44 @@
+.full-screen {
+    height: 100vh;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    &__text {
+        font-size: $fs-primary-font-xl;
+        line-height: 40px;
+        max-width: 750px;
+        margin-top: 63px;
+        
+        @include screenXXL() {
+            font-size: $fs-primary-font-lg;
+            line-height: 130%;
+            max-width: 605px;
+            margin-top: 26px;
+        }
+        @include screenL() {
+            font-size: $fs-primary-font-md;
+            line-height: 26px;
+            max-width: 430px;
+            margin-top: 16px;
+        }
+        @include screenS() {
+            font-size: $fs-primary-font-sm;
+            line-height: 22px;
+            margin-top: 14px;
+        }
+        @include screenXS() {
+            max-width: 270px;
+        }
+    }
+    @include screenS() {
+        height: auto;
+        &__content {
+            padding-top: 120px;
+            padding-bottom: 66px;
+        }
+    }
+}
