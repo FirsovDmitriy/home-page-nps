@@ -37,8 +37,33 @@
                 //- img.work-col__img(src="tpl/assets/img/center-diamond.png", alt="")
                 .work-col__img 
                     picture 
-                        source(media="(min-width: 1600px)", srcset="tpl/assets/img/center-diamond.png, tpl/assets/img/center-diamond-2x.png")
-                        source(media="(min-width: 1024px)", srcset="tpl/assets/img/center-diamond-1366.png, tpl/assets/img/center-diamond-1366-2x.png")
-                        source(media="(min-width: 768px)", srcset="tpl/assets/img/center-diamond-1024.png, tpl/assets/img/center-diamond-1024-2x.png")
-                        source(media="(max-width: 767px)", srcset="tpl/assets/img/center-diamond-320.png, tpl/assets/img/center-diamond-320-2x.png")
+                        source(media="(min-width: 1600px)", srcset="tpl/assets/img/center-diamond.png, tpl/assets/img/center-diamond-2x.png 2x")
+                        source(media="(min-width: 1024px)", srcset="tpl/assets/img/center-diamond-1366.png, tpl/assets/img/center-diamond-1366-2x.png 2x")
+                        source(media="(min-width: 768px)", srcset="tpl/assets/img/center-diamond-1024.png, tpl/assets/img/center-diamond-1024-2x.png 2x")
+                        source(media="(max-width: 767px)", srcset="tpl/assets/img/center-diamond-320.png, tpl/assets/img/center-diamond-320-2x.png 2x")
                         img.work-col__img(src="tpl/assets/img/center-diamond.png", alt="")
+        .work__row 
+            .work__col.work-col.work-col--blue.free-col
+                .free-col__title
+                    img.free-col__title-img(src="tpl/assets/svg/free-title.svg", alt="Свободные")
+                    span.work-col__title-year 2019
+                p.work-col__text Создание новостного сайта для агентства, входящего в тройку самых популярных в регионе
+            .work__col.work-col.work-col--light.spectrum-col
+                h3.work-col__title УК «Спектр»
+                    span.work-col__title-year 2020
+                p.work-col__text Имиджевый корпоративный сайт для компании управляющей нефтегазовыми проектами
+.work__frendom.frendom
+    .container 
+        .work__row 
+            .work__col.work-col.frendom__col
+                .work-col__info
+                    h3.work-col__title Frendom
+                        span.work-col__title-year 2019
+                    p.work-col__text Сайт бренда мягкой мебели с магазинами по всей России и ближнему зарубежью.
+                .work-col__img 
+                    picture 
+                        source(media="(min-width: 1600px)", srcset="tpl/assets/img/frendom.png, tpl/assets/img/frendom-2x.png 2x")
+                        source(media="(min-width: 1024px)", srcset="tpl/assets/img/frendom-1600.png, tpl/assets/img/frendom-1600-2x.png 2x")
+                        source(media="(min-width: 1065px)", srcset="tpl/assets/img/frendom-1024.png, tpl/assets/img/frendom-1024-2x.png 2x")
+                        source(media="(max-width: 1064px)", srcset="tpl/assets/img/frendom-320.png, tpl/assets/img/frendom-320-2x.png 2x")
+                        img(src="dist/tpl/assets/img/frendom.png", alt="")
