@@ -22,6 +22,11 @@
             align-items: flex-start;
         }
     }
+    @media (max-width: 1366px) {
+        .container {
+            max-width: 1196px;
+        }
+    }
 }
 .nav-header {
     margin-right: auto;
@@ -42,6 +47,10 @@
     &__link {
         font-size: $fs-primary-font-md;
         line-height: 130%;
+        transition: $transition;
+        &:hover {
+            color: #265FF5;
+        }
         @include screenXS() {
             font-size: $fs-primary-font-xs;
         }

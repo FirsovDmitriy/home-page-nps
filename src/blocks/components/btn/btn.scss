@@ -5,7 +5,7 @@
 	
     transition: .3s;
 
-    color: #265FF5;
+    color: $blue-color;
     background: transparent;
     border-radius: 30px;
 
@@ -14,11 +14,18 @@
     font-size: $fs-primary-font-md;
     font-weight: 400;
 
-    &:hover, &:focus {
-        
-
+    &:hover {
+        background: $blue-color;
+        color: $white-color;
     }
-    &[disabled] {
-
+    // &[disabled] {}
+    &--small {
+        padding: 12px 40px;
+    }
+    @media (max-width: 1200px) {
+        padding: 12px 40px;
+    }
+    @media (max-width: 576px) {
+        padding: 9px 32px;
     }
 }
