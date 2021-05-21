@@ -11,8 +11,9 @@
 
     cursor: pointer;
 
-    font-size: $fs-primary-font-md;
     font-weight: 400;
+    font-size: $fs-primary-font-md;
+    line-height: 130%;
 
     &:hover {
         background: $blue-color;

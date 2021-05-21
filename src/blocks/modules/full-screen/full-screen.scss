@@ -1,4 +1,5 @@
 .full-screen {
+    position: relative;
     height: 100vh;
 
     &__wrapper {
@@ -7,38 +8,107 @@
         align-items: center;
         height: 100%;
     }
+
+    &__list {
+        position: absolute;
+        display: inline-block;
+        height: 100%;
+        padding-left: 15px;
+        vertical-align: bottom;
+        overflow: hidden;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 260px;
+        z-index: -10;
+        // opacity: 0;
+        // visibility: hidden;
+    }
+
     &__text {
         font-size: $fs-primary-font-xl;
         line-height: 40px;
         max-width: 750px;
         margin-top: 63px;
-        
+
         @include screenXXL() {
             font-size: $fs-primary-font-lg;
             line-height: 130%;
             max-width: 605px;
             margin-top: 26px;
         }
+
         @include screenL() {
             font-size: $fs-primary-font-md;
             line-height: 26px;
             max-width: 430px;
             margin-top: 16px;
         }
+
         @include screenS() {
             font-size: $fs-primary-font-sm;
             line-height: 22px;
             margin-top: 14px;
         }
+
         @include screenXS() {
             max-width: 270px;
         }
     }
+
     @include screenS() {
         height: auto;
+
         &__content {
             padding-top: 180px;
             padding-bottom: 160px;
         }
     }
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.full-screen__slide {
+    display: none;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+
+//   @-webkit-keyframes fade {
+//     from {opacity: .4}
+//     to {opacity: 1}
+//   }
+
+@keyframes fade {
+
+    // from {opacity: .4}
+    // to {opacity: 1}
+    // 0% {
+    //     transform: translateY(0);
+    // }
+
+    // 25% {
+    //     transform: translateY(-100%);
+    // }
+
+    // 50% {
+    //     transform: translateY(-200%);
+    // }
+
+    // 100% {
+    //     transform: translateY(-300%)
+    // }
+//    0% {transform:translate3d(0,0,0);}
+//   20% {transform:translate3d(0,-100%,0);}
+//   45% {transform:translate3d(0,-100%,0);}
+//   60% {transform:translate3d(0,-100%,0);}
+//   72% {transform:translate3d(0,-100,0);}
+//   100% {transform:translate3d(0,-100%,0);}
 }
