@@ -33,3 +33,10 @@
     @content;
   }
 }
+
+@mixin futura-pt {
+  font: {
+    family: 'Futura PT';
+    weight: 400;
+  }
+}

@@ -63,6 +63,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.6.0",
     "clipboardy": "^2.3.0",
     "gulp-posthtml": "^3.0.5",
@@ -75,7 +76,8 @@
     "masonry-layout": "^4.2.2",
     "select2": "^4.1.0-rc.0",
     "swiper": "^6.5.9",
-    "vinyl-ftp": "^0.6.1"
+    "vinyl-ftp": "^0.6.1",
+    "wow.js": "^1.2.2"
   },
   "husky": {
     "hooks": {

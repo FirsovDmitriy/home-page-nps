@@ -20,6 +20,7 @@
     &__btn {
         margin-top: 30px;
     }
+    &__link,
     &__text {
         font-size: $fs-primary-font-lg;
         line-height: 130%;
@@ -30,6 +31,10 @@
             font-size: $fs-second-font-lg;
             line-height: 130%;
             margin-top: 20px;
+            &:hover {
+                color: $blue-color;
+                transition: $transition;
+            }
         }
     }
     @media (max-width: 1800px) {
@@ -55,7 +60,8 @@
         &__body {
             max-width: 712px;
         }
-        &__text {
+        &__text,
+        &__link {
             font-size: $fs-primary-font-md;
             line-height: 26px;
         }

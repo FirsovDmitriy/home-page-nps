@@ -4,11 +4,18 @@ import "./import/modules";
 import "./import/components";
 import "./import/animation"
 
+// import "../../node_modules/wow.js/dist/wow"
+
+import WOW from 'wow.js/dist/wow.js';
+
+// import 'animate/animate.css'
+
+// import "animate.css/animate.css";
 // import swiper from 'swiper'
 
 
 
-
+new WOW().init();
 
 
 $(document).ready(function () {
@@ -28,6 +35,4 @@ $(document).ready(function () {
 	
 
 });
-
-
 

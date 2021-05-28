@@ -1,40 +1,50 @@
 include ../../components/btn/btn
+include ../../components/ico/ico
 
 .work 
 
     .container 
         .work__row.work-row
-            .work__col.work-col
-                a.work-link(href="#")
-                    h3.work-col__title СГМУ
-                        span.title-year 2020
+            a.work__col.work-col(href="#")
+                h3.work-col__title СГМУ
+                    span.title-year 2020
                 p.work-col__text.work-text корпоративный сайт
-                .work-col__img
-                    picture 
-                        source(media="(min-width: 1900px)", srcset="tpl/assets/img/sgmu.png, tpl/assets/img/sgmu-2x.png 2x")
-                        source(media="(min-width: 1201px)", srcset="tpl/assets/img/sgmu-1366.png, tpl/assets/img/sgmu-1366-2x.png 2x")
-                        source(media="(min-width: 910px)", srcset="tpl/assets/img/sgmu-1024.png, tpl/assets/img/sgmu-1024-2x.png 2x")
-                        source(media="(max-width: 909px)", srcset="tpl/assets/img/sgmu-320.png, tpl/assets/img/sgmu-320-2x.png 2x")
-                        img(src="tpl/assets/img/sgmu.png", alt="")  
-            .work__col.work-col 
-                a.work-link(href="#")
-                    h3.work-col__title Sofner
-                        span.title-year 2020
+                .work-col__img.work-col__img--first
+                    .work-col__img-sgmu
+                        .work-col__img-sgmu__bg
+                        picture 
+                            source(media="(min-width: 1900px)", srcset="tpl/assets/img/sgmu.png, tpl/assets/img/sgmu-2x.png 2x")
+                            source(media="(min-width: 1201px)", srcset="tpl/assets/img/sgmu-1366.png, tpl/assets/img/sgmu-1366-2x.png 2x")
+                            source(media="(min-width: 910px)", srcset="tpl/assets/img/sgmu-1024.png, tpl/assets/img/sgmu-1024-2x.png 2x")
+                            source(media="(max-width: 909px)", srcset="tpl/assets/img/sgmu-320.png, tpl/assets/img/sgmu-320-2x.png 2x")
+                            img(src="tpl/assets/img/sgmu.png", alt="")
+                .work-col__img.work-col__img--animated
+            a.work-col.work-col(href="#")
+                h3.work-col__title Sofner
+                    span.title-year 2020
                 p.work-col__text.work-col__text--second.work-text сайт нового бренда мягкой мебели от сибирской фабрики с большой историей
                 .work-col__img.work-col__img--top
-                    picture 
-                        source(media="(min-width: 1900px)", srcset="tpl/assets/svg/sofner.svg")
-                        source(media="(min-width: 1201px)", srcset="tpl/assets/svg/sofner-1366.svg")
-                        source(media="(min-width: 910px)", srcset="tpl/assets/svg/sofner-1024.svg")
-                        source(media="(max-width: 909px)", srcset="tpl/assets/svg/sofner-320.svg")
-                        img(src="tpl/assets/svg/sofner.svg", alt="")
+                    //- img(src="tpl/assets/svg/so.svg", alt="").work-col__img.work-col__img-so
+                    //- img(src="tpl/assets/svg/sofner.svg", alt="")
+                    picture.work-col__img-picture
+                        //- source(media="(min-width: 1900px)", srcset="tpl/assets/svg/sofner.svg")
+                        //- source(media="(min-width: 1201px)", srcset="tpl/assets/svg/sofner-1366.svg")
+                        //- source(media="(min-width: 910px)", srcset="tpl/assets/svg/sofner-1024.svg")
+                        //- source(media="(max-width: 909px)", srcset="tpl/assets/svg/sofner-320.svg")
+                        img(src="tpl/assets/svg/sofner.svg", alt="").work-col__img-sofner
+                        picture
+                            //- source(media="(min-width: 1900px)", srcset="tpl/assets/svg/so.svg")
+                            //- source(media="(min-width: 1201px)", srcset="tpl/assets/svg/so-1366.svg")
+                            //- source(media="(min-width: 910px)", srcset="tpl/assets/svg/so-1024.svg")
+                            //- source(media="(max-width: 909px)", srcset="tpl/assets/svg/so-320.svg")
+                            img(src="tpl/assets/svg/so.svg", alt="").work-col__img.work-col__img-so
 
     .work__diamond.diamond.work-row
         .container 
             .diamond__wrapper 
                 .diamond__left
                     .diamond__circle.diamond-circle 
-                        .diamond-circle__elem 
+                        .diamond-circle__elem
                         .diamond-circle__elem
                     .diamond__info
                         a.work-link(href="#")
@@ -51,52 +61,62 @@ include ../../components/btn/btn
                             img(src="tpl/assets/img/center-diamond.png", alt="")
     .container
         .work-row
-            .work__free.free 
+            a.work__free.free(href="#") 
                 .free__title 
                     img.free__title-img(src="tpl/assets/svg/free-title.svg", alt="Свободные")
                     span.title-year 2019
                 p.free__text.work-text Создание новостного сайта для агентства, входящего в тройку самых популярных в регионе
-            .work__spectrum.spectrum 
-                a.work-link(href="#")
-                    h3.spectrum__title УК «Спектр»
-                        span.title-year 2020
+            a.work__spectrum.spectrum(href="#") 
+                h3.spectrum__title УК «Спектр»
+                    span.title-year 2020
                 p.spectrum__text.work-text Имиджевый корпоративный сайт для компании управляющей нефтегазовыми проектами
     
-    .work__frendom.frendom.work-row 
-        .container 
-            .frendom__wrapper
+    a.work__frendom.frendom.work-row(href="#")
+        .container
+            .frendom__wrapper 
                 .frendom__content 
-                    .frendom__info
-                        a.work-link(href="#")
-                            h3.frendom__title Frendom
-                                span.title-year 2019
+                    .frendom__info 
+                        h3.frendom__title Frendom
+                            span.title-year 2019
                         p.frendom__text.work-text Сайт бренда мягкой мебели с магазинами по всей России и ближнему зарубежью.
                     .frendom__img 
                         picture 
                             source(media="(min-width: 1900px)", srcset="tpl/assets/img/frendom.png, tpl/assets/img/frendom-2x.png 2x")
                             source(media="(min-width: 1201px)", srcset="tpl/assets/img/frendom-1366.png, tpl/assets/img/frendom-1366-2x.png 2x")
-                            source(media="(min-width: 910px)", srcset="tpl/assets/img/frendom-1024.png, tpl/assets/img/frendom-1024-2x.png 2x")
-                            source(media="(max-width: 909px)", srcset="tpl/assets/img/frendom-320.png, tpl/assets/img/frendom-320-2x.png 2x")
+                            source(media="(min-width: 577px)", srcset="tpl/assets/img/frendom-1024.png, tpl/assets/img/frendom-1024-2x.png 2x")
+                            source(media="(max-width: 576px)", srcset="tpl/assets/img/frendom-320.png, tpl/assets/img/frendom-320-2x.png 2x")
                             img(src="tpl/assets/img/frendom.png", alt="")
 
     .container 
         .work__row.work-row
-            .work__col.work-col
-                a.work-link(href="#")
-                    h3.work-col__title M9 Roasters
-                        span.title-year 2019
+            a.work__col.work-col.m9(href="#")
+                h3.work-col__title M9 Roasters
+                    span.title-year 2019
                 p.work-col__text.work-text готовое зерно из лучших уголков Земли
-                .work-col__img
-                    picture 
-                        source(media="(min-width: 1900px)", srcset="tpl/assets/img/roasters.png, tpl/assets/img/roasters-2x.png 2x")
-                        source(media="(min-width: 1201px)", srcset="tpl/assets/img/roasters-1366.png, tpl/assets/img/roasters-1366-2x.png 2x")
-                        source(media="(min-width: 910px)", srcset="tpl/assets/img/roasters-1024.png, tpl/assets/img/roasters-1024-2x.png 2x")
-                        source(media="(max-width: 909px)", srcset="tpl/assets/img/roasters-320.png, tpl/assets/img/roasters-320-2x.png 2x")
-                        img(src="tpl/assets/img/roasters.png", alt="")  
-            .work__col.work-col
-                a.work-link(href="#")
-                    h3.work-col__title Amayak Group
-                        span.title-year 2019 
+                .work-col__img 
+                    .work-col__img.m9__wrapper
+                        picture 
+                            source(media="(min-width: 1900px)", srcset="tpl/assets/svg/m9-circle.svg")
+                            source(media="(min-width: 1201px)", srcset="tpl/assets/svg/m9-circle-1366.svg")
+                            source(media="(min-width: 910px)", srcset="tpl/assets/svg/m9-circle-1024.svg")
+                            source(media="(max-width: 909px)", srcset="tpl/assets/svg/m9-circle-320.svg")
+                            img.m9__img.m9__img--first(src="tpl/assets/svg/m9-circle.svg", alt="")
+                        picture 
+                            source(media="(min-width: 1900px)", srcset="tpl/assets/svg/m9-circle-2.svg")
+                            source(media="(min-width: 1201px)", srcset="tpl/assets/svg/m9-circle-2-1366.svg")
+                            source(media="(min-width: 910px)", srcset="tpl/assets/svg/m9-circle-2-1024.svg")
+                            source(media="(max-width: 909px)", srcset="tpl/assets/svg/m9-circle-2-320.svg")
+                            img.m9__img.m9__img--second(src="tpl/assets/svg/m9-circle-2.svg", alt="")
+                            picture.m9__picture
+                                source(media="(min-width: 1900px)", srcset="tpl/assets/img/m9.png, tpl/assets/img/m9-2x.png 2x")
+                                source(media="(min-width: 1201px)", srcset="tpl/assets/img/m9-1366.png, tpl/assets/img/m9-1366-2x.png 2x")
+                                source(media="(min-width: 910px)", srcset="tpl/assets/img/m9-1024.png, tpl/assets/img/m9-1024-2x.png 2x")
+                                source(media="(max-width: 909px)", srcset="tpl/assets/img/m9-320.png, tpl/assets/img/m9-320-2x.png 2x")
+                                img(src="tpl/assets/img/roasters.png", alt="")
+
+            a.work__col.work-col(href="#")
+                h3.work-col__title Amayak Group
+                    span.title-year 2019
                 p.work-col__text.work-col__text--second.work-text мобильное приложение для заказа услуг дверных систем
                 .work-col__img.work-col__img--top
                     picture 
@@ -106,8 +126,9 @@ include ../../components/btn/btn
                         source(media="(max-width: 909px)", srcset="tpl/assets/img/amayak-320.svg")
                         img(src="tpl/assets/img/amayak.svg", alt="")
     .container 
-        .work-row
-            .work__bottom 
+        .work__bottom.work-row.work-bottom
+            .work-col.work-bottom__col
                 h2.work__slogan Дальше 
                     span.work__slogan-color лучше <br /> больше креативней
+            .work-col.work-bottom__col
                 +btn('Смотреть еще', 'work__btn')
